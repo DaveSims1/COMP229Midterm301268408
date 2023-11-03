@@ -1,5 +1,5 @@
 let app = require('./server/config/app');
-let debug = require('debug')('COMP229-F2023-MIDTERM-START:server');
+let debug = require('debug')('COMP229-F2023-MIDTERM-301268408:server');
 let http = require('http');
 
 /**
