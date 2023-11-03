@@ -8,7 +8,7 @@
           <!-- ------------------------ -->
           <!-- FIX THE ADD BUTTON BELOW -->
           <!-- ------------------------ -->
-          <a href="details.ejs" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
+          <a href="books/details/" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
           <br>
           <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
@@ -24,23 +24,23 @@
                 </thead>
                 <tbody>
                 <!-- Template Row -->
-                <% for (let count = 0; count < books.length; count++) { %>
+                <% for (let i = 0; i < books.length; i++) { %>
                 <tr>
-                  <td><%= books[count].Title %></td>
-                  <td class="text-center">$<%= books[count].Price %></td>
-                  <td class="text-center"><%= books[count].Author %></td>
-                  <td class="text-center"><%= books[count].Genre %></td>
+                  <td><%= books[i].Title %></td>
+                  <td class="text-center">$<%= books[i].Price %></td>
+                  <td class="text-center"><%= books[i].Author %></td>
+                  <td class="text-center"><%= books[i].Genre %></td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the EDIT BUTTON HERE -->
-                    <!-- ------------------------ -->
+                    <a href="/books/details/<%= books[i]._id%>" class="btn btn-primary">
+                    <i class="fas fa-pencil alt">Edit</i>
+                    </a>
                   </td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the DELETE BUTTON HERE -->
-                    <!-- ------------------------ -->
+                    <a href="/books/delete/<%= books[i]._id%>" class="btn btn-danger">
+                    <i class="fas fa-trash-alt">Delete</i>
+                    </a>  
                   </td>
                 </tr>
                 <% } %>
