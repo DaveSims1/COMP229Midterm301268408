@@ -1,3 +1,10 @@
+/**
+ * Name: David Sims
+ * Student Number: 301268408
+ * Project: Comp229 Midterm Project
+ * FileName: COMP220-F2023-MIDTERM-301268408
+ */
+
 // moddules for node and express
 let createError = require('http-errors');
 let express = require('express');

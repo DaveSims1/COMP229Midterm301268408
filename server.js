@@ -1,3 +1,13 @@
+/**
+ * Name: David Sims
+ * Student Number: 301268408
+ * Project: Comp229 Midterm Project
+ * FileName: COMP220-F2023-MIDTERM-301268408
+ */
+
+
+
+
 let app = require('./server/config/app');
 let debug = require('debug')('COMP229-F2023-MIDTERM-301268408:server');
 let http = require('http');
